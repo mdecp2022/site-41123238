@@ -142,8 +142,26 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">W11 << <a href='W11.html'>Previous</a> <a href='W13.html'>Next</a> >> W13<br /><h1>W12</h1>
-<p>攝氏= 5/9 乘(華氏溫度- 32)</p>
-<br />W11 << <a href='W11.html'>Previous</a> <a href='W13.html'>Next</a> >> W13</div>
+<p><a href="https://mdecp2022.github.io/site-41123238/content/Brython.html?src=https://gist.githubusercontent.com/41123238/9a691a0811f448aa209204d320b51002/raw/2de2e181e919e55aa489fe6584031ba0037ab866/w12-1.py">第一個練習</a></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
+user_input_temp = input("請輸入攝氏溫度值:")
+# 接著列出 user_input_temp 變數的資料型別
+print(type(user_input_temp))</pre>
+<p><a href="https://mdecp2022.github.io/site-41123238/content/Brython.html?src=https://gist.githubusercontent.com/41123238/9a691a0811f448aa209204d320b51002/raw/cf9acdb2177510fd5aad498841b52a220d7226e2/w12-2.py">第二個練習</a></p>
+<div style="box-sizing: border-box; font-family: 'Cascadia Mono', Consolas, ui-monospace, Menlo, Monaco, monospace; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: pre; word-spacing: 0px;">
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
+user_input_temp = input("請輸入攝氏溫度值:")
+# 接著列出 user_input_temp 變數的資料型別
+print(type(user_input_temp))
+# 到這裡已知利用 input() 函式將傳回字串, 接著以 float() 將字串轉為浮點數
+user_input_temp = float(user_input_temp)
+# 因為攝氏溫度乘上 9/5 之後再加上 32 就可以得到對應的華氏溫度值
+Fahrenheit = (user_input_temp*9/5) + 32
+# 到這裡, Fahrenheit 資料型別為浮點數, 而 user_input_temp 在第 8 行也轉為浮點數
+# 要將兩個浮點數與字串相加, 都必須透過 str() 轉為字串
+print("攝氏 " + str(user_input_temp) + " 度, 等於華氏 " + str(Fahrenheit) + " 度.")</pre>
+<pre><span class="cm-line"><span class="cm-comment"><br/></span></span></pre>
+</div><br />W11 << <a href='W11.html'>Previous</a> <a href='W13.html'>Next</a> >> W13</div>
         
     <!-- footer -->
       <div class="container">
